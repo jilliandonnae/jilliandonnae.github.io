@@ -105,7 +105,7 @@ body {
         map.on('click', onMapClick);
 
 var neighborhoodsLayer = null;
-$.getJSON("C:/github/blood_lead.geojson",function(data){
+$.getJSON("C:/github/geoviz/blood_lead.geojson",function(data){
     neighborhoodsLayer = L.geoJson(data, {
         style: styleFunc,
         onEachFeature: function(feature, layer){
